@@ -8,8 +8,13 @@ function translateURL(text){
 	return serverURL + "?" + "text=" + text; 
 }
 
+function errorHandler(error){
+	console.log("error occured "+error);
+	alert("Server is down! Please try after some time.");
+}
+
 btn.addEventListener("click",function btnHandler(){
 	fetch(translateURL(txtIn.value)).then(response => response.json()).then(json=>{
-		console.log(json.contents.translated);
-	});
+		divOut.innerText=json.contents.translated;
+	}).catch(errorHandler);
 });
