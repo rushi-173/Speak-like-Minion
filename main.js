@@ -1,3 +1,4 @@
-var userName = prompt("Enter your name :");
-var welcomeMessege = "Hello! "+ userName;
-alert(welcomeMessege);
+var btn = document.querySelector("#btn");
+btn.addEventListener("click",function btnHandler(){
+	console.log("clicked!");
+});
