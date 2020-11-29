@@ -1,4 +1,6 @@
 var btn = document.querySelector("#btn");
 btn.addEventListener("click",function btnHandler(){
-	console.log("clicked!");
+	txtIn = document.querySelector("#txtInput");
+	var userInput = txtIn.value;
+	console.log(userInput);
 });
