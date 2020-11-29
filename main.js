@@ -2,7 +2,7 @@ var btn = document.querySelector("#btn");
 var txtIn = document.querySelector("#txtInput");
 var divOut = document.querySelector("#divOut");
 
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 function translateURL(text){
 	return serverURL + "?" + "text=" + text; 
